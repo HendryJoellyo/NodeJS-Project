@@ -5,86 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Mahasiswa</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        .content {
-            display: flex;
-            justify-content: center;
-            padding: 40px;
-            margin-top: 50px;
-        }
-
-        form {
-            background: #f9f9f9;
-            padding: 25px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 500px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        form input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-
-        form button {
-            background-color: rgb(44, 184, 51);
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        form button:hover {
-            background-color: rgb(19, 157, 26);
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            text-decoration: none;
-            background-color: #ffffff;
-            color: rgb(19, 157, 26);
-            font-weight: bold;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        a:hover {
-            background-color: rgb(19, 157, 26);
-            color: rgb(255, 255, 255);
-        }
-    </style>
+   
 </head>
 <body>
-
+<a href="http://localhost:5000/">← Kembali ke Beranda</a>
 <div class="content">
     <form method="GET" action="/">
         <input type="hidden" name="menu" value="proses-dosen">
         <h1>Form Input Data Dosen</h1>
+        
+        <label>NIK</label>
+        <input type="text" name="nik" maxlength="7" required>
+
         <label>Nama Dosen</label>
         <input type="text" name="nama" required>
 
-        <label>NIK</label>
-        <input type="text" name="nim" required>
+         <label>Tanggal lahir</label>
+        <input type="date" name="tgl_lahir" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
 
         <label>Program Studi</label>
         <input type="text" name="prodi" required>
@@ -93,7 +33,7 @@
     </form>
 </div>
 
-<a href="http://localhost:5000/">← Kembali ke Beranda</a>
+
 
 </body>
 </html>
