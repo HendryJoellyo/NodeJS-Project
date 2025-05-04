@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            height: 100vh;
+            width: 220px;
+            position: fixed;
+            background-color:rgb(44, 184, 51);
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar a {
+            display: block;
+            color: #0b8221;
+            padding: 12px 20px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color:rgb(19, 157, 26);
+            color: #fff;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .content h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Admin Panel</h2>
+    <a href="http://localhost:5000/?menu=form-mahasiswa">Input Data Mahasiswa</a>
+    <a href="http://localhost:5000/?menu=form-dosen">Input Data Dosen</a>
+    <a href="http://localhost:5000/?menu=cek-mahasiswa">Cek Data Mahasiswa</a>
+    <a href="http://localhost:5000/?menu=cek-dosen">Cek Data Dosen</a>
+</div>
+
+<div class="content">
+    <h1>Selamat Datang Admin</h1>
+    <p>Silakan pilih menu di sidebar untuk melakukan aksi data mahasiswa dan dosen.</p>
+</div>
+
+</body>
+</html>
